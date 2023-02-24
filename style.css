@@ -1,0 +1,6 @@
+.mealDb-hero{
+    background: linear-gradient(0deg,rgba(0,0,0,1),rgba(0,0,0,0.5)),url(./images/banner_1.png) ;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

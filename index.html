@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello Meal DB</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.0/dist/full.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    <section>
+      <header class="w-3/4 flex justify-between items-center mx-auto py-6">
+        <h1 class="text-2xl font-bold">Tasty HUT</h1>
+        <button class="bg-orange-500 px-4 py-3 rounded-md text-xl">
+          Sign Up
+        </button>
+      </header>
+      <div class=" text-center mealDb-hero relative">
+       <div class=" w-1/2 flex flex-col items-center space-y-4 absolute top-20 left-80	">
+        <h1 class=" text-6xl font-bold text-white p-3">Taste Our Delicious Best Foods</h1>
+        <p class="text-white p-2 ">
+          There are many variations of passages of Lorem Ipsum available, but
+          the majority have suffered alteration in some form, by injected humou.
+        </p>
+        <div class="flex items-center justify-center flex-row mx-auto ">
+          <input id="user-search-keyword" class=" w-96 py-3 px-9 text-xl text-gray-700" placeholder="Search any Food" type="text" value="" />
+          <button onclick="searchHanlder()" class="bg-yellow-500 -mx-2 py-3 px-3 text-xl font-bold rounded-md">Search</button>
+        </div>
+       </div>
+      </div>
+    </section>
+    <!-- Start the main section of foods -->
+<section>
+    <main class="py-7">
+        <h1 class="text-center text-2xl font-bold py-2 mb-6">Your favourite Food</h1>
+        <div id="itemsAll" class="grid grid-cols-2 gap-4 w-3/4 mx-auto">
+</div>
+        </div>
+    </main>
+</section>
+
+
+
+
+
+<!-- The button to open modal -->
+<!-- Put this part before </body> tag -->
+<input type="checkbox" id="mealDBModal" class="modal-toggle" />
+<div class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+
+   <img class="w-3/4 " id="modalImg" src="" alt="">
+
+    <h3 id="meal-title" class="font-bold text-lg">CongratulationsThis is Your Food </h3>
+    <p id="meal-desc" class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p>
+    <div class="modal-action">
+      <label for="mealDBModal" class="btn">Done</label>
+    </div>
+  </div>
+</div>
+
+<!-- modals -->
+
+
+<script src="./index.js"></script>
+  </body>
+</html>
